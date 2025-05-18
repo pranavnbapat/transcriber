@@ -1,0 +1,21 @@
+# Virtual environment
+.venv/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Environment and secrets
+.env
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Logs, binaries, backups
+*.log
+*.bin
+*.bak
+
+deploy.sh
+git_auto_commit.py

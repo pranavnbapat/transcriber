@@ -1,0 +1,14 @@
+services:
+  transcriber:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/pranavnbapat/transcriber:latest
+    container_name: transcriber
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "12000:12000"
+    volumes:
+      - ./app:/app/app

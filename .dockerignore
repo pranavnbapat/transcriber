@@ -1,0 +1,34 @@
+# Virtual environment
+.venv/
+
+# IDE settings
+.idea/
+.vscode/
+
+# Environment and secrets (prevent secrets from going into image)
+.env
+.env.*
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Logs, binaries, backups
+*.log
+*.bin
+*.bak
+
+# Docker and Git config files (if not needed in the image)
+.dockerignore
+docker-compose.yml
+Dockerfile
+
+# Git repository data
+.git/
+.gitignore
+.github/
+
+/root/.cache/
+
+deploy.sh
+git_auto_commit.py
